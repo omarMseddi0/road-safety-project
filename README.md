@@ -40,6 +40,6 @@ Dans VS Code, choisir le noyau `Python (road-safety-project)`. Exécuter 01, 02 
 
 Les scores et erreurs par classe sont présentés dans 03. Le modèle reste faible pour les collisions mortelles ; l’accuracy globale seule ne suffit pas. Il décrit des collisions corporelles déclarées à la police, sans mesurer un risque par trajet ni prouver une causalité. Les changements de déclaration de gravité limitent les comparaisons temporelles. 2025 avait déjà été inspecté lors des premiers essais du projet : une future année indépendante reste nécessaire pour une validation prospective.
 
-Les objectifs de gravité individuelle des victimes et de nombre de victimes restent pour la suite. La présentation initiale du sujet est conservée dans `output/`.
+Deux objectifs restent pour la suite : classifier la présence d’un cycliste (`has_cycle`) et estimer le nombre de véhicules impliqués (`vehicle_count`), à partir du contexte routier et temporel. Ils réutiliseront le CSV déjà préparé ; la cible et les agrégats de véhicules qui révèlent sa valeur seront exclus des entrées. La présentation initiale du sujet est conservée dans `output/`.
 
 [Source officielle DfT](https://www.gov.uk/government/statistical-data-sets/road-safety-open-data) · [Guide de gravité](https://www.gov.uk/government/publications/guide-to-severity-adjustments-for-reported-road-casualty-statistics). Le dictionnaire de codes est fourni dans `references/`.
